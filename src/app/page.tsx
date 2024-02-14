@@ -4,9 +4,9 @@ import Hero from './components/Hero/Hero';
 const page = () => {
   return (
     <>
-      <div>
+      <main>
         <Hero />
-      </div>
+      </main>
     </>
   );
 };

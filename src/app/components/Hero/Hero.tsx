@@ -1,10 +1,12 @@
 import React from 'react';
-import { GoogleEffect } from '../GoogleEffect.tsx/GoogleEffect';
+import { GoogleEffect } from './GoogleEffect';
+import { Parallax } from './Parallax';
 
 const Hero = () => {
   return (
     <>
       <GoogleEffect />
+      <Parallax />
     </>
   );
 };

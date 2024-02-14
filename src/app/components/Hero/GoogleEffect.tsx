@@ -23,7 +23,7 @@ export function GoogleEffect() {
     >
       <GoogleGeminiEffect
         title="Dash-Zon"
-        description='Simplifying Your Amazon Selling Experience'       
+        description='Save Time, and get more done.'       
         pathLengths={[
           pathLengthFirst,
           pathLengthSecond,

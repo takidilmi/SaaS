@@ -26,11 +26,11 @@ export const GoogleGeminiEffect = ({
       <p className="text-lg md:text-8xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
         {title || `Build with Aceternity UI`}
       </p>
-      <h1 className="text-xs md:text-7xl font-normal text-center text-white mt-4 max-w-5xl mx-auto">
+      <h2 className="text-xs md:text-7xl font-normal text-center text-white mt-4 max-w-5xl mx-auto">
         {description ||
           `Scroll this component and see the bottom SVG come to life wow this
         works!`}
-      </h1>
+      </h2>
       <div className="flex z-10 flex-col items-center mt-3 justify-center">
         <Link
           className="text-3xl bg-red-600 hover:bg-purple-600 transition-all duration-300 hover:scale-90 rounded-[8px] p-2"
