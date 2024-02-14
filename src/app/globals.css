@@ -7,7 +7,7 @@
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
 }
- 
+
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -110,4 +110,36 @@ nav span:hover {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.radius-custom {
+  border-radius: 30% 70% 95% 5% / 29% 23% 77% 71%;
+  background: rgb(58, 5, 79);
+  background: linear-gradient(
+    193deg,
+    rgba(58, 5, 79, 1) 5%,
+    rgba(146, 128, 191, 1) 51%,
+    rgba(119, 79, 227, 1) 95%
+  );
+  position: relative;
+}
+.radius-custom2 {
+  border-radius: 100% 0% 97% 3% / 29% 100% 0% 71%;
+  background: rgb(58, 5, 79);
+  background: linear-gradient(
+    193deg,
+    rgba(58, 5, 79, 1) 5%,
+    rgba(146, 128, 191, 1) 51%,
+    rgba(119, 79, 227, 1) 95%
+  );
+  position: absolute;
+  height: 445px;
+  width: 95%;
+}
+
+.list-hover > li {
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.list-hover > li:hover {
+  color: red;
 }
