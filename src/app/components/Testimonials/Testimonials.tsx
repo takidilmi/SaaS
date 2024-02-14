@@ -5,9 +5,9 @@ import { WavyBackgroundDemo } from './WavyBackground';
 const Testimonials = () => {
   return (
     <>
-      <div className="flex relative flex-col items-center justify-center">
+      <section className="flex relative flex-col items-center justify-center">
         <WavyBackgroundDemo />
-      </div>
+      </section>
     </>
   );
 };
