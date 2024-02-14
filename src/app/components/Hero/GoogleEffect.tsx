@@ -17,7 +17,7 @@ export function GoogleEffect() {
   const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
 
   return (
-    <div
+    <header
       className="h-[200vh] bg-black w-full dark:border dark:border-white/[0.1] relative pt-40 overflow-clip"
       ref={ref}
     >
@@ -32,6 +32,6 @@ export function GoogleEffect() {
           pathLengthFifth,
         ]}
       />
-    </div>
+    </header>
   );
 }
