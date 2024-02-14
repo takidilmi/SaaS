@@ -5,7 +5,7 @@ import { ColumnDef } from '@tanstack/react-table';
 
 type Props = {};
 
-export default function page({}: Props) {
+export default function UsersPage({}: Props) {
   return (
     <>
       <div className="bg-white p-8 pt-20">
