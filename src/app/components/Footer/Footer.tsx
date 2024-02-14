@@ -16,7 +16,7 @@ const Footer = () => {
       <footer className="flex items-center flex-col bg-purple-800 bg-opacity-10 backdrop-blur-lg pt-5 z-10">
         <div className="w-[75%] z-10">
           <div className="flex flex-col radius-custom">
-            <div className="flex flex-2 m-10 flex-row flex-wrap justify-around">
+            <div className="flex text-lg font-bold flex-2 m-10 flex-row flex-wrap justify-around">
               <div className="flex items-center gap-1 hover:text-violet-800 cursor-pointer">
                 <IoSpeedometer size={30} />
                 <Link href="">Free training & 24h support</Link>
@@ -31,7 +31,7 @@ const Footer = () => {
               </div>
             </div>
             <hr className="w-1/2" />
-            <div className="flex cursor-default flex-[3] flex-wrap items-center p-2 justify-around ">
+            <div className="flex header-text cursor-default flex-[3] flex-wrap items-center p-2 justify-around ">
               <div className="flex flex-col flex-wrap gap-3 self-start">
                 <h3>DASH-ZON</h3>
                 <ul className="flex flex-col gap-2 self-center list-hover">

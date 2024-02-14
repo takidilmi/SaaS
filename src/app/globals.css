@@ -145,3 +145,7 @@ nav span:hover {
 .list-hover > li:hover {
   color: red;
 }
+.header-text h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
