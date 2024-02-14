@@ -13,8 +13,8 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <>
-      <footer className="flex items-center flex-col bg-black z-10">
-        <div className='w-[75%] z-10'>
+      <footer className="flex items-center flex-col bg-purple-800 bg-opacity-10 backdrop-blur-lg pt-5 z-10">
+        <div className="w-[75%] z-10">
           <div className="flex flex-col radius-custom">
             <div className="flex flex-2 m-10 flex-row flex-wrap justify-around">
               <div className="flex items-center gap-1 hover:text-violet-800 cursor-pointer">

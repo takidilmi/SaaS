@@ -5,20 +5,6 @@ import { ColumnDef } from '@tanstack/react-table';
 import { cn } from '@/lib/utils';
 
 type Props = {};
-
-export default function OrdersPage({}: Props) {
-  return (
-    <>
-      <div className="bg-white p-8 pt-20">
-        <h1 className="text-3xl font-bold">Orders</h1>
-        <DataTable
-          columns={columns}
-          data={data}
-        />
-      </div>
-    </>
-  );
-}
 type Payment = {
   order: string;
   status: string;
@@ -149,3 +135,18 @@ const columns: ColumnDef<Payment>[] = [
     header: 'Method',
   },
 ];
+
+
+export default function OrdersPage({}: Props) {
+  return (
+    <>
+      <div className="bg-white p-8 pt-20">
+        <h1 className="text-3xl font-bold">Orders</h1>
+        <DataTable
+          columns={columns}
+          data={data}
+        />
+      </div>
+    </>
+  );
+}

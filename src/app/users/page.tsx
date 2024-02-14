@@ -4,20 +4,6 @@ import { DataTable } from '../components/Users/DataTable';
 import { ColumnDef } from '@tanstack/react-table';
 
 type Props = {};
-
-export default function UsersPage({}: Props) {
-  return (
-    <>
-      <div className="bg-white p-8 pt-20">
-        <h1 className="text-3xl font-bold">Users</h1>
-        <DataTable
-          columns={columns}
-          data={data}
-        />
-      </div>
-    </>
-  );
-}
 type Payment = {
   name: string;
   email: string;
@@ -25,7 +11,7 @@ type Payment = {
   method: string;
 };
 
-export const data: Payment[] = [
+const data: Payment[] = [
   {
     name: 'John Doe',
     email: 'john@example.com',
@@ -117,7 +103,7 @@ export const data: Payment[] = [
     method: 'Stripe',
   },
 ];
-export const columns: ColumnDef<Payment>[] = [
+const columns: ColumnDef<Payment>[] = [
   {
     accessorKey: 'name',
     header: 'Name',
@@ -149,3 +135,17 @@ export const columns: ColumnDef<Payment>[] = [
     header: 'Method',
   },
 ];
+
+export default function UsersPage({}: Props) {
+  return (
+    <>
+      <div className="bg-white p-8 pt-20">
+        <h1 className="text-3xl font-bold">Users</h1>
+        <DataTable
+          columns={columns}
+          data={data}
+        />
+      </div>
+    </>
+  );
+}

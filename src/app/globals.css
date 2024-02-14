@@ -76,7 +76,7 @@
   }
 }
 body{
-  background-color: black
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity));
 }
 @layer base {
   * {

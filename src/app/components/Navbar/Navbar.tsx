@@ -1,7 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
+import Signin from './Signin';
 
-const Navbar = () => {
+type Props = {};
+
+export default function Navbar({}: Props) {
   return (
     <nav className="flex justify-end z-50 text-white w-full fixed top-0">
       <a
@@ -34,11 +36,12 @@ const Navbar = () => {
         </div>
         <div className="flex space-x-3 flex-wrap items-center">
           <a href="">Contact</a>
-          <a href="">SignIn</a>
+          <div >
+            <Signin />
+          </div>
         </div>
       </div>
     </nav>
   );
-};
+}
 
-export default Navbar;

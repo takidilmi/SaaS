@@ -1,7 +1,9 @@
 import React from 'react';
 import { MultipleTabs } from './MultipleTabs';
 
-const Features = () => {
+type Props = {};
+
+export default function Features({}: Props) {
   return (
     <>
       <section className="bg-black pb-20 w-screen flex flex-col gap-2">
@@ -12,6 +14,4 @@ const Features = () => {
       </section>
     </>
   );
-};
-
-export default Features;
+}

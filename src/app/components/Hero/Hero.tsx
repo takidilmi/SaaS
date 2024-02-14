@@ -2,13 +2,13 @@ import React from 'react';
 import { GoogleEffect } from './GoogleEffect';
 import { Parallax } from './Parallax';
 
-const Hero = () => {
+type Props = {};
+
+export default function Hero({}: Props) {
   return (
     <>
       <GoogleEffect />
       <Parallax />
     </>
   );
-};
-
-export default Hero;
+}

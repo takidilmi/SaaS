@@ -1,8 +1,9 @@
 import React from 'react';
-import { Slider } from './Slider';
 import { WavyBackgroundDemo } from './WavyBackground';
 
-const Testimonials = () => {
+type Props = {};
+
+export default function Testimonials({}: Props) {
   return (
     <>
       <section className="flex relative flex-col items-center justify-center">
@@ -10,6 +11,4 @@ const Testimonials = () => {
       </section>
     </>
   );
-};
-
-export default Testimonials;
+}
