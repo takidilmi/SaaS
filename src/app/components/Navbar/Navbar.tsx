@@ -10,7 +10,7 @@ const Navbar = () => {
       >
         Logo
       </a>
-      <div className="flex justify-between items-center w-1/2 p-1 gap-2 px-2 backdrop-blur-md rounded-xl">
+      <div className="flex justify-between items-center w-1/2 p-1 gap-2 px-2 bg-purple-600 bg-opacity-10 backdrop-blur-md rounded-xl">
         <div className="flex space-x-4">
           <div className="bg-red-600 h-[2px] w-[120px] self-center"></div>
           <a href="">Product</a>
