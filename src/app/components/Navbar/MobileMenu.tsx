@@ -19,7 +19,7 @@ function MobileMenu() {
           className="z-50 justify-center px-3 py-2 text-sm font-semibold"
           aria-label="Open Menu"
         >
-          <HiOutlineMenuAlt3 className="w-6 h-6" />
+          <HiOutlineMenuAlt3 className="w-6 h-6 text-purple-800" />
         </button>
       )}
       <motion.div
@@ -31,7 +31,7 @@ function MobileMenu() {
           open ? 'flex' : 'hidden'
         } flex-col fixed justify-center overflow-hidden w-screen h-screen bg-purple-800 bg-opacity-30 backdrop-blur-lg top-0 right-0`}
       >
-        <div className="mx-10 pl-10 rounded-3xl normal-case font-normal tracking-wider w-[80%] self-end">
+        <div className="mx-10 text-white pl-10 rounded-3xl normal-case font-normal tracking-wider w-[80%] self-end">
           <Signin />
         </div>
         {open && (
@@ -40,7 +40,7 @@ function MobileMenu() {
             className="z-50 justify-center px-3 absolute right-0 top-0 py-2 text-sm font-semibold"
             aria-label="Close Menu"
           >
-            <HiOutlineX className="text-red-600 w-6 h-6" />
+            <HiOutlineX className="text-purple-800 w-6 h-6" />
           </button>
         )}
         <Link
