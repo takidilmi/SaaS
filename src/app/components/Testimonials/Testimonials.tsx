@@ -6,7 +6,7 @@ type Props = {};
 export default function Testimonials({}: Props) {
   return (
     <>
-      <section className="flex relative flex-col items-center justify-center">
+      <section className="overflow-hidden flex relative flex-col items-center justify-center">
         <WavyBackgroundDemo />
       </section>
     </>
