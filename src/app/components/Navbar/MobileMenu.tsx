@@ -31,7 +31,7 @@ function MobileMenu() {
           open ? 'flex' : 'hidden'
         } flex-col fixed justify-center overflow-hidden w-screen h-screen bg-purple-800 bg-opacity-30 backdrop-blur-lg top-0 right-0`}
       >
-        <div className="mx-10 text-white pl-10 rounded-3xl normal-case font-normal tracking-wider w-[80%] self-end">
+        <div className="mx-10 pl-10 rounded-3xl normal-case font-normal tracking-wider w-[80%] self-end">
           <Signin />
         </div>
         {open && (
