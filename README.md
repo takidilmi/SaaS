@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Amazon Seller Dashboard
+
+This is a cloud-based Amazon Seller Dashboard prototype built with Next.js 14 and TypeScript. It's designed to simplify and enhance the experience for Amazon sellers, providing them with a comprehensive tool to manage their sales, inventory, and analytics in one place.
+
+## Features
+
+- **Sales and Revenue Tracking**: View daily, weekly, monthly, and yearly sales figures, including total revenue, number of orders, and average order value.
+- **Inventory Management**: Display current inventory levels for each product and alert users when stock is low or needs replenishment.
+- **Analytics and Insights**: Analyze top-selling products, customer demographics, and sales trends over time.
+- **Customer Feedback and Reviews**: Aggregate customer reviews and ratings for products, allowing sellers to monitor feedback directly from the dashboard.
+# Deployment
+
+The project is deployed on Vercel. You can access it at https://saa-s-lilac.vercel.app/.
+
+## Technologies Used
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- React icons
+- Sitemap
+- Aceternity UI
+- Shadcn UI
+- Framer Motion
+- npm
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+   ```
+   git clone https://github.com/takidilmi/SaaS (SSH: git@github.com:takidilmi/SaaS.git)
+   ```
+2. Install the dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Environment Variables
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The project uses the following environment variables:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `NEXT_PUBLIC_FORMSPREE_FORM_ID`: Your Formspree form ID for the contact form.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You need to add these environment variables to your `.env` file (which you should not include in your version control system) and to your hosting platform. If you're using Vercel, you can add them in the project settings under the "Environment Variables" section.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+Click signin
+Navigate to the dashboard to view your sales, inventory, and analytics. You can also manage your inventory directly from the dashboard.
