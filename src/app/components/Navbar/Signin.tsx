@@ -5,12 +5,12 @@ import React, { useState } from 'react';
 export default function Signin() {
   const [isSignedIn, setIsSignedIn] = useState(false);
 
-  const toggleSignin = () => {    
+  const toggleSignin = () => {
     setIsSignedIn(!isSignedIn);
   };
 
   return (
-    <Link href="" onClick={toggleSignin}>
+    <div onClick={toggleSignin}>
       {isSignedIn ? (
         <div className="dropdown">
           <img
@@ -19,14 +19,29 @@ export default function Signin() {
             alt="user-image"
           />
           <div className="dropdown-content -right-[70px] pt-3">
-            <a href="/dashboard" className='text-white hover:text-violet-800'>Dashboard</a>
-            <a href="/users" className='text-white hover:text-violet-800'>Users</a>
-            <a href="/orders" className='text-white hover:text-violet-800'>Orders</a>
+            <Link
+              href="/dashboard"
+              className="text-violet-800 hover:text-white transition-all duration-300"
+            >
+              Dashboard
+            </Link>
+            <Link
+              href="/users"
+              className="text-violet-800 hover:text-white transition-all duration-300"
+            >
+              Users
+            </Link>
+            <Link
+              href="/orders"
+              className="text-violet-800 hover:text-white transition-all duration-300"
+            >
+              Orders
+            </Link>
           </div>
         </div>
       ) : (
-        'Signin'
+        <Link href="">Signin</Link>
       )}
-    </Link>
+    </div>
   );
 }
