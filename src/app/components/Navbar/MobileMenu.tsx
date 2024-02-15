@@ -31,7 +31,7 @@ function MobileMenu() {
           open ? 'flex' : 'hidden'
         } flex-col fixed justify-center overflow-hidden w-screen h-screen bg-purple-800 bg-opacity-30 backdrop-blur-lg top-0 right-0`}
       >
-        <div className="mx-10 pl-10 rounded-3xl normal-case font-normal tracking-wider w-[80%] self-end">
+        <div className="mx-10 pl-10 rounded-3xl normal-case font-normal text-white tracking-wider w-[80%] self-end">
           <Signin />
         </div>
         {open && (
@@ -51,7 +51,7 @@ function MobileMenu() {
         </Link>
 
         <div className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-red-600 tracking-wider">
-          <div className="dropdown">
+          <div className="dropdown z-10">
             <span>
               Learn <i className="arrow"></i>
             </span>
@@ -61,19 +61,7 @@ function MobileMenu() {
               <a href="">Learn 3</a>
             </div>
           </div>
-        </div>
-        <div className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-red-600 tracking-wider">
-          <div className="dropdown">
-            <span>
-              Solutions <i className="arrow"></i>
-            </span>
-            <div className="dropdown-content bg-purple-300 bg-opacity-70 backdrop-blur-lg rounded-[4px]">
-              <a href="">Solution 1</a>
-              <a href="">Solution 2</a>
-              <a href="">Solution 3</a>
-            </div>
-          </div>
-        </div>
+        </div>        
         <Link
           className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-red-600 tracking-wider"
           href=""
@@ -86,6 +74,18 @@ function MobileMenu() {
         >
           Contact
         </Link>
+        <div className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-red-600 tracking-wider">
+          <div className="dropdown">
+            <span>
+              Solutions <i className="arrow"></i>
+            </span>
+            <div className="dropdown-content bg-purple-300 bg-opacity-70 backdrop-blur-lg rounded-[4px]">
+              <a href="">Solution 1</a>
+              <a href="">Solution 2</a>
+              <a href="">Solution 3</a>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </nav>
   );
