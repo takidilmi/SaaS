@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn('min-h-screen', inter.className)}>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

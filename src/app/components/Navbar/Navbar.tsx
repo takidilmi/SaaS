@@ -17,7 +17,7 @@ export default function Navbar({}: Props) {
           <div className="bg-purple-800 h-[2px] w-[120px] self-center"></div>
           <a href="">Product</a>
           <div className="dropdown">
-            <span>Learn</span>
+            <span>Learn <i className="arrow"></i></span>
             <div className="dropdown-content">
               <a href="">Learn 1</a>
               <a href="">Learn 2</a>
@@ -25,7 +25,7 @@ export default function Navbar({}: Props) {
             </div>
           </div>
           <div className="dropdown">
-            <span>Solutions</span>
+            <span>Solutions <i className="arrow"></i></span>
             <div className="dropdown-content">
               <a href="">Solution 1</a>
               <a href="">Solution 2</a>

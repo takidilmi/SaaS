@@ -94,7 +94,7 @@ nav span {
 
 nav a:hover,
 nav span:hover {
-  color: red;
+  color: rgb(91 33 182 / var(--tw-text-opacity));
 }
 .dropdown {
   position: relative;
@@ -112,6 +112,14 @@ nav span:hover {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 .radius-custom {
   border-radius: 30% 70% 95% 5% / 29% 23% 77% 71%;
@@ -143,7 +151,7 @@ nav span:hover {
   cursor: pointer;
 }
 .list-hover > li:hover {
-  color: red;
+  color: rgb(91 33 182 / var(--tw-text-opacity));
 }
 .header-text h3 {
   font-size: 1.2rem;
