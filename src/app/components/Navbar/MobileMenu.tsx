@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import React, { useCallback, useState } from 'react';
 import { HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
-import { motion } from 'framer-motion';
 import Signin from './Signin';
+import './Menu.css';
 
 function MobileMenu() {
   const [open, setOpen] = useState<boolean>(false);
@@ -12,7 +12,7 @@ function MobileMenu() {
     setOpen((prevOpen) => !prevOpen);
   }, []);
   return (
-    <nav className="lg:hidden absolute right-0 z-50 no-scrollbar navbar-end no-scrollbar">
+    <nav className="lg:hidden fixed top-0 right-0 z-50 no-scrollbar navbar-end no-scrollbar">
       {!open && (
         <button
           onClick={handleClick}
@@ -22,13 +22,9 @@ function MobileMenu() {
           <HiOutlineMenuAlt3 className="w-6 h-6 text-purple-800" />
         </button>
       )}
-      <motion.div
-        animate={
-          open ? { width: '100%', height: '100vh' } : { width: 0, height: 0 }
-        }
-        transition={{ duration: 0.5 }}
+      <div
         className={`${
-          open ? 'flex' : 'hidden'
+          open ? 'div open' : 'div closed'
         } flex-col fixed justify-center overflow-hidden w-screen h-screen bg-purple-800 bg-opacity-30 backdrop-blur-lg top-0 right-0`}
       >
         <div className="mx-10 pl-10 rounded-3xl normal-case font-normal text-white tracking-wider w-[80%] self-end">
@@ -61,7 +57,7 @@ function MobileMenu() {
               <a href="">Learn 3</a>
             </div>
           </div>
-        </div>        
+        </div>
         <Link
           className="py-8 text-center transition-all duration-500 hover:translate-x-1 normal-case font-light text-5xl text-red-600 tracking-wider"
           href=""
@@ -86,7 +82,7 @@ function MobileMenu() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </nav>
   );
 }
