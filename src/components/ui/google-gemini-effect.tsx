@@ -33,7 +33,7 @@ export const GoogleGeminiEffect = ({
       </h2>
       <div className="flex z-10 flex-col items-center mt-3 justify-center">
         <Link
-          className="text-3xl bg-red-600 hover:bg-purple-600 transition-all duration-300 hover:scale-90 rounded-[8px] p-2"
+          className="text-3xl bg-purple-600 hover:bg-purple-400 transition-all duration-300 hover:scale-90 rounded-[8px] p-2"
           href=""
         >
           Get Started, Don&apos;t Miss out
