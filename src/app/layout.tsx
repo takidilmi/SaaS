@@ -4,7 +4,6 @@ import './globals.css';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import { cn } from '@/lib/utils';
-import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,6 +25,9 @@ export const metadata: Metadata = {
   },
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
+  icons: {
+    icon: '/icon.webp',
+  },
 };
 
 export default function RootLayout({
@@ -35,9 +37,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/next.svg" />
-      </Head>
       <body className={cn('min-h-screen', inter.className)}>
         <Navbar />
         {children}
