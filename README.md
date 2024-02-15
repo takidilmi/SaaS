@@ -8,6 +8,11 @@ This is a cloud-based Amazon Seller Dashboard prototype built with Next.js 14 an
 - **Inventory Management**: Display current inventory levels for each product and alert users when stock is low or needs replenishment.
 - **Analytics and Insights**: Analyze top-selling products, customer demographics, and sales trends over time.
 - **Customer Feedback and Reviews**: Aggregate customer reviews and ratings for products, allowing sellers to monitor feedback directly from the dashboard.
+![screencapture-saa-s-lilac-vercel-app-2024-02-15-14_30_44](https://github.com/takidilmi/SaaS/assets/137835769/380104eb-6173-4694-97b2-6130b052e05f)
+![screencapture-saa-s-lilac-vercel-app-dashboard-2024-02-15-14_31_28 (1)](https://github.com/takidilmi/SaaS/assets/137835769/4b3fd70a-5ded-46b0-970a-41d0f4e642f8)
+![screencapture-saa-s-lilac-vercel-app-orders-2024-02-15-14_32_02 (1)](https://github.com/takidilmi/SaaS/assets/137835769/eae33d6c-a598-4345-9ca8-9d2ca593f992)
+![screencapture-saa-s-lilac-vercel-app-users-2024-02-15-14_31_44](https://github.com/takidilmi/SaaS/assets/137835769/0b824579-85bc-4cb1-98dc-027766d9a644)
+
 # Deployment
 
 The project is deployed on Vercel. You can access it at https://saa-s-lilac.vercel.app/.
@@ -48,5 +53,5 @@ The project uses the following environment variables:
 You need to add these environment variables to your `.env` file (which you should not include in your version control system) and to your hosting platform. If you're using Vercel, you can add them in the project settings under the "Environment Variables" section.
 
 ## Usage
-Click signin
-Navigate to the dashboard to view your sales, inventory, and analytics. You can also manage your inventory directly from the dashboard.
+- Click signin
+- Navigate to the dashboard to view your sales, inventory, and analytics. You can also manage your inventory directly from the dashboard.
